@@ -15,7 +15,7 @@ En esta web se puede encontrar información sobre los proyectos de inversión p�
 
 Pero no todo es fácil; para poder construir una base de datos completa, es necesario unir la información de los diferentes archivos que se publican en este sitio[^2].
 
-### ** Objetivos y Metodología**
+### **Objetivos y Metodología**
 
 El objetivo de este proyecto es **analizar cómo ha evolucionado la inversión pública en Nicaragua entre los años 2017 y 2021**, conociendo lo siguiente:
 
