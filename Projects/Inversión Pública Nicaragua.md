@@ -41,42 +41,47 @@ Para poder consolidar toda la información en una sola base de datos fue necesar
 Busqué algún ejemplo en internet sobre esto pero no encontré nada, porque no es algo común, así que lo hice de una manera algo rústica. Tuve que crear columnas para cada registro de las entidades de mi base de datos. Por ejemplo, en el primer archivo fueron: departamento, municipio, proyecto, obra, institución; en el segundo: Ente, institución, proyecto, obra, fuente; en el tercero: ente, sector, proyecto.
 
 Lo que facilitó el trabajo fue que cada entidad tenía un color diferente, con lo que pude hacer lo siguiente, resumidamente: 
+
 1)	En una nueva pestaña, copié la tabla con todos sus registros desagrupados:
- 
+ ![image](https://user-images.githubusercontent.com/112327873/189502508-4c9c67d5-8d26-4bc2-89aa-55d031effd25.png)
+
 2)	Cree una columna para cada nivel de información.
- 
+ ![image](https://user-images.githubusercontent.com/112327873/189502519-84f737a3-de59-4f69-a1fe-0b705de73880.png)
+
 3)	Borré los registros que no pertenecían a cada columna, guiado por el color.
- 
-
-
+ ![image](https://user-images.githubusercontent.com/112327873/189502523-b455feda-342b-4d71-b715-5b8c3d4801c6.png)
 
 4)	Rellené automáticamente cada columna con el registro al que pertenecía para que cada fila coincidiera al final con el último elemento. 
+![image](https://user-images.githubusercontent.com/112327873/189502538-5fd36014-75e6-4424-9a13-2ac8da08e5da.png)
 
 5)	Seguidamente fue necesario crear dos columnas para mostrar el tipo de fuente (interna o externa) y tipo de financiamiento (donación, préstamo, recursos del tesoro).
 Para crear el tipo financiamiento usé el siguiente código:
 =IF(OR(H1103="Recursos del Tesoro", H1103="Recursos Propios", H1103="Ingresos con Destino Específico"), "Fondos Internos", "Fondos Externos")
 
 Para crear el tipo de fuente (donación, préstamo o recurso interno), tuve que crear un código que conectara las columnas de los datos de las fuentes de financiamiento:
+
 =IF(M1106>0,"Recursos Propios", IF(N1106>0, "Recursos del Tesoro", IF(O1106>0, "Destino Específico", IF(P1106>0, "Donación", IF(Q1106>0, "Préstamo")))))
 
 Nota: Antes de esto tuve problemas porque no identificaba bien la columna de la fuente con lo que había escrito en los códigos, por lo que tuve que eliminar los espacios iniciales de la columna con la función TRIM
-
+![image](https://user-images.githubusercontent.com/112327873/189502545-63179e75-296b-4bb0-b40a-0b10c1cfb978.png)
 
 Este procedimiento lo apliqué con las tres bases de datos, para los años 2017-2022 y me quedó lo siguiente:
+![image](https://user-images.githubusercontent.com/112327873/189502556-1dd6cd46-3d5c-4183-8f91-8ada04945dda.png)
 
 Para el caso de esta base de datos, donde se muestra el sector al que pertenece el proyecto, tuve que agregar una columna con el nombre de la institución completa ya que el archivo solamente mostraba las siglas del nombre de la institución lo que iba afectar la conexión de la información. 
 Nota: En esta parte, encontré una dificultad pues hay un proyecto y obra particular que se asigna a los recursos transferidos por el gobierno central a los municipios. En este caso, registraba el primer municipio que encontraba, por lo tanto se perdía la información de cada municipio en este particular. Por lo tanto, como en el caso anterior, concatené el proyecto con el municipio para conectar la información.
+![image](https://user-images.githubusercontent.com/112327873/189502563-16e2c8e9-a454-4715-9567-b3343f264e45.png)
 
 El siguiente paso fue unir las tres bases de datos en una sola para cada archivo. En este punto, decidí unir la información en el archivo donde me mostraba la fuente de financiamiento individual para cada proyecto, por lo tanto tenía que añadir las columnas para los demás datos: Departamento, Municipio, Sector.
 
 Para conocer el municipio del proyecto conecté la columna obra/actividad con el municipio de la base de datos que brinda la información del municipio y departamento a través de la función XLOOKUP, y luego conecté el departamento con el municipio con la misma función. 
 
 Para el caso del sector tuve que conectar los datos con el proyecto, pues hasta este nivel llegaba la información en estos archivos. Además,  creé una columna concatenando el Ente y la institución a la que pertenecía el proyecto para luego unirla con la información base que estaba creando. 
+![image](https://user-images.githubusercontent.com/112327873/189502570-9c8281bf-2ff2-4d2f-b6ac-459f1e410f2e.png)
 
 Finalmente, solamente restaba unir la información de todos los años en un solo archivo. Para esto tuve que hacer uso de Python, ya que en Mac, la opción de unir bases de datos en un solo archivo (através de power query) aún no está disponible. Por lo tanto, copie cada pestaña, que se convirtió en los datos para un solo año, en un solo archivo. 
 
-![image](https://user-images.githubusercontent.com/112327873/189502413-49b63b8a-4cce-488a-a05f-09a7c4b6ceff.png)
-
+![image](https://user-images.githubusercontent.com/112327873/189502572-5e24ca4d-0e22-4241-8c5a-17ff0bc566ea.png)
 
 
 
