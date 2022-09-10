@@ -4,7 +4,7 @@
 
 ### Category Name 1 
 
-[Project 1 Title](/Projects/Inversión Pública Nicaragua.md)
+[Inversión pública Nicaragua 2017-2022](/Projects/Inversión Pública Nicaragua.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
