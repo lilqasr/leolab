@@ -3,7 +3,7 @@
 @import "colors";
 
 body {
-  background-color: var(#FFFFFF);
+  background-color: #FFFFFF;
   padding:50px;
   font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--clr-text);
@@ -174,7 +174,7 @@ strong {
 }
 
 section {
-  width: 1000px;
+  width: 900px;
   float:right;
   padding-bottom:30px;
 }
