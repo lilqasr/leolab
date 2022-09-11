@@ -36,7 +36,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:var(--clr-a-text);
+  color:var(--black);
   text-decoration:none;
 }
 
@@ -112,12 +112,12 @@ th, td {
 }
 
 dt {
-  color:var(--clr-table-header-and-dt);
+  color:var(--black);
   font-weight:700;
 }
 
 th {
-  color:var(--clr-table-header-and-dt);
+  color:var(--black);
 }
 
 img {
