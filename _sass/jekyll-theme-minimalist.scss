@@ -41,18 +41,18 @@ a {
 }
 
 a:hover, a:focus {
-  color: var(--clr-a-text-hvr);
+  color: var(--black);
 }
 
 a small {
   font-size:11px;
-  color:var(--clr-small-in-a);
+  color:var(--black);
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:var(--clr-small-in-a);
+  color:var(--black);
 }
 
 // added
