@@ -30,9 +30,9 @@ Tanto el segundo archivo como el tercero, los datos publicados son los ejecutado
 
 <img src="https://user-images.githubusercontent.com/112327873/189492022-570004f1-294e-4cc8-a6e8-886f66583e38.png" width="450" height="200"> 
 
-<img src=https://user-images.githubusercontent.com/112327873/189492041-49625f65-216c-4a0c-b721-3d63edc9db72.png" width="450" height="200">
+<img src="https://user-images.githubusercontent.com/112327873/189492041-49625f65-216c-4a0c-b721-3d63edc9db72.png" width="450" height="200">
 
-<img src=https://user-images.githubusercontent.com/112327873/189492068-1e392e96-318d-4346-867e-5311c8f30e38.png" width="450" height="200">
+<img src="https://user-images.githubusercontent.com/112327873/189492068-1e392e96-318d-4346-867e-5311c8f30e38.png" width="450" height="200">
 
 ### **Construcción de las bases de datos**
 
