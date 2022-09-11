@@ -28,11 +28,11 @@ Para esto, hice uso de tres archivos que publica el SNIP. En el primero se prese
 
 Tanto el segundo archivo como el tercero, los datos publicados son los ejecutados, pero con el primero, son datos de presupuestos actualizados, es decir, lo último que se aprueba (o se modifica) durante el año. Esto no es lo que realmente se ejecuta. Por lo tanto, fue necesario unir los datos de los archivos donde se muestra la información departamental y municipal.
 
-<img src="https://user-images.githubusercontent.com/112327873/189492022-570004f1-294e-4cc8-a6e8-886f66583e38.png" width="600" height="300"> 
+<img src="https://user-images.githubusercontent.com/112327873/189492022-570004f1-294e-4cc8-a6e8-886f66583e38.png" width="450" height="200"> 
 
-![Archivo 2](https://user-images.githubusercontent.com/112327873/189492041-49625f65-216c-4a0c-b721-3d63edc9db72.png)
+<img src=https://user-images.githubusercontent.com/112327873/189492041-49625f65-216c-4a0c-b721-3d63edc9db72.png" width="450" height="200">
 
-![Archivo 3](https://user-images.githubusercontent.com/112327873/189492068-1e392e96-318d-4346-867e-5311c8f30e38.png)
+<img src=https://user-images.githubusercontent.com/112327873/189492068-1e392e96-318d-4346-867e-5311c8f30e38.png" width="450" height="200">
 
 ### **Construcción de las bases de datos**
 
