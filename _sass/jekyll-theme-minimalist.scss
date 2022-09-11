@@ -3,7 +3,7 @@
 @import "colors";
 
 body {
-  background-color: #FFFFFF;
+  background-color: var(--clr-bg);
   padding:50px;
   font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--clr-text);
