@@ -2,7 +2,11 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+### Category Name 1 
+
+[Project 1 Title](https://github.com/lilqasr/leolab/blob/36334bf09828d6f757a5729b12c0813e56929072/Projects/Inversi%C3%B3n%20P%C3%BAblica%20Nicaragua.md)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
 
 [Link to another page](Projects/Inversión Pública Nicaragua.md).
 
