@@ -36,23 +36,23 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:var(--black);
+  color:var(--clr-a-text;
   text-decoration:none;
 }
 
 a:hover, a:focus {
-  color: var(--black);
+  color: var(--clr-a-text-hvr);
 }
 
 a small {
   font-size:11px;
-  color:var(--black);
+  color:var(--clr-small-in-a);
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:var(--black);
+  color:var(--clr-small-in-a);
 }
 
 // added
@@ -169,7 +169,7 @@ kbd {
 }
 
 strong {
-  color:var(--clr-h1-and-bold);
+  color:var(--black-and-bold);
   font-weight:700;
 }
 
