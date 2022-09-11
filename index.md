@@ -4,7 +4,7 @@ layout: default
 
 ### Category Name 1 
 
-[Project 1 Title](leolab/try.html)
+[Project 1 Title](/leolab/try.html)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 
