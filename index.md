@@ -6,7 +6,7 @@ layout: default
 
 ## **PYTHON** <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-### [**5. Apartments for rent in Rome**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Real_State_Roma)
+### [**5. Apartments for rent in Rome**](Projects/Apartments_for_Rent.md)
 
 <img src="images/rentrome.png" width="400"   />
 
