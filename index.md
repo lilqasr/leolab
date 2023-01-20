@@ -17,7 +17,6 @@ layout: default
 
 ### [**3. Nicaragua Public Investment Program Analysis**](https://github.com/lilqasr/Projects/edit/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/README.md)
 
-(https://nbviewer.org/github/lilqasr/Projects/blob/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/Public_Investment_Program%202017-2022%20Analysis.ipynb)
 
 <img src="images/investNic.png" width="400"/>
 
