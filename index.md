@@ -10,7 +10,7 @@ layout: default
 
 <img src="images/governmentdocs.jpeg" width="400"/>
 
-### [**2. Cardiovascular Disease Analysis**](/leolab/Projects/Cardiovascular_Disease_Analysis.md)
+### [**2. Cardiovascular Disease Analysis**](/leolab/Projects/Cardiovascular_Disease_Analysis.html)
 
 <img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400"/>
 
