@@ -15,7 +15,7 @@ layout: default
 <img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400"/>
 
 
-### [**3. Nicaragua Public Investment Program Analysis**](https://github.com/lilqasr/Projects/edit/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/README.md)
+### [**3. Nicaragua Public Investment Program Analysis**](https://github.com/lilqasr/Projects/blob/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/README.md)
 
 
 <img src="images/investNic.png" width="400"/>
