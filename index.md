@@ -10,7 +10,7 @@ layout: default
 
 <img src="images/governmentdocs.jpeg" width="400"/>
 
-### [**2. Cardiovascular Disease Analysis**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Cardiovascular%20Disease%20Analysis)
+### [**2. Cardiovascular Disease Analysis**](https://github.com/lilqasr/leolab/blob/portfolio/Projects/Cardiovascular_Disease_Analysis)
 
 <img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400"/>
 
