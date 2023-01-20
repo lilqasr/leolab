@@ -1,4 +1,7 @@
-# PROJECT DESCRIPTION
+---
+layout: post
+---
+
 
 This project consisted on building a dataset from a real state web page in Italy to analyse the rental apartments market in Rome.
 
