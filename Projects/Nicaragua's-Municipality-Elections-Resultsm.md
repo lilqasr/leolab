@@ -8,7 +8,7 @@ layout: default
 
 ## [Jupyter Notebook](https://github.com/lilqasr/Projects/blob/main/Projects_list/Python/Nicaragua's-Municipality-Elections-Results/Elections_Nic_2022-Clean.ipynb)
 
-## [CSV FILE](https://github.com/lilqasr/Projects/blob/main/Projects_list/Python/Nicaragua's-Municipality-Elections-Results/Nicaragua_Results_Municipality_Elections2022.csv)
+## [csv file](https://github.com/lilqasr/Projects/blob/main/Projects_list/Python/Nicaragua's-Municipality-Elections-Results/Nicaragua_Results_Municipality_Elections2022.csv)
 
 ## [Tableau Visualization](https://public.tableau.com/views/EleccionesMunicipales-ResultsParciales/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
