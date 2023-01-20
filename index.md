@@ -10,7 +10,7 @@ layout: default
 
 <img src="images/rentrome.png" width="400"   />
 
-### [**4. Nicaragua's Municipality Elections Result**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Nicaragua's-Municipality-Elections-Results)
+### [**4. Nicaragua's Municipality Elections Result**](Projects/Nicaragua's-Municipality-Elections-Resultsm.md)
 
 <img src="images/MunicipalitiesElections2022.png" width="400"/>  
 
