@@ -14,7 +14,7 @@ layout: default
 
 <img src="images/MunicipalitiesElections2022.png" width="400"/>  
 
-### [**3. Nicaragua Public Investment Program Analysis**](https://github.com/lilqasr/Projects/blob/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/README.md)
+### [**3. Nicaragua Public Investment Program Analysis**](Projects/Inversión Pública Nicaragua.md)
 
 
 <img src="images/investNic.png" width="400"/>
