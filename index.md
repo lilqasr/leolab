@@ -1,6 +1,36 @@
 ---
 layout: default
 ---
+# **PORTFOLIO**
+
+## **PYTHON** <img height="32" width="32" src="https://cdn.simpleicons.org/python/aqua" />
+
+### [**1. Building a dataset from files published on a website**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Building%20dataset%20from%20website)
+<p>&nbsp;</p>
+<img src="images/rentrome.png" width="400"   />
+<p>&nbsp;</p>
+
+### [**2. Cardiovascular Disease Analysis**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Cardiovascular%20Disease%20Analysis)
+<p>&nbsp;</p>
+<img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400" height="200"/>
+<p>&nbsp;</p>
+
+### [**3. Nicaragua Public Investment Program Analysis**](https://nbviewer.org/github/lilqasr/Projects/blob/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/Public_Investment_Program%202017-2022%20Analysis.ipynb)
+<p>&nbsp;</p>
+<img src="images/investNic.png" width="400"/>
+<p>&nbsp;</p>
+
+### [**4. Nicaragua's Municipality Elections Result**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Nicaragua's-Municipality-Elections-Results)
+<p>&nbsp;</p>
+<img src="images/MunicipalitiesElections2022.png" width="400"/>  
+<p>&nbsp;</p>
+
+### [**5. Apartments for rent in Rome**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Real_State_Roma)
+
+
+![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
+
+<img height="32" width="32" src="https://cdn.simpleicons.org/microsoftexcel/aqua" /> <img height="32" width="32" src="https://cdn.simpleicons.org/python/aqua" />
 
 ### Category Name 1 
 
