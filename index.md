@@ -6,7 +6,7 @@ layout: default
 
 ## **PYTHON** <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-### [**1. Building a dataset from files published on a website**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Building%20dataset%20from%20website)
+### [**1. Building a dataset from files published on a website**](Building_data_web.md)
 
 <img src="images/governmentdocs.jpeg" width="400"/>
 
