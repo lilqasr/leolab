@@ -14,6 +14,7 @@ layout: default
 
 <img src="images/MunicipalitiesElections2022.png" width="400"/>  
 
+
 ### [**3. Nicaragua Public Investment Program Analysis**](Projects/Inversión Pública Nicaragua.md)
 
 
