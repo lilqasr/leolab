@@ -12,7 +12,7 @@ It was also required to use the findings to create and predict a model.
  <iframe frameborder="0"
              noresize="noresize"
              style="position: absolute; background: transparent; width: 100%; height:100%;"
-             src="try.html"
+             src="https://github.com/lilqasr/leoportfolio/blob/main/cvd-analysis/index.html"
              frameborder="0">
      </iframe>
 
