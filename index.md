@@ -6,28 +6,29 @@ layout: default
 
 ## **PYTHON** <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-### [**1. Building a dataset from files published on a website**](Building_data_web.md)
+### [**5. Apartments for rent in Rome**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Real_State_Roma)
 
-<img src="images/governmentdocs.jpeg" width="400"/>
+<img src="images/rentrome.png" width="400"   />
 
-### [**2. Cardiovascular Disease Analysis**](Projects/Cardiovascular_Disease_Analysis.md)
+### [**4. Nicaragua's Municipality Elections Result**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Nicaragua's-Municipality-Elections-Results)
 
-<img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400"/>
-
+<img src="images/MunicipalitiesElections2022.png" width="400"/>  
 
 ### [**3. Nicaragua Public Investment Program Analysis**](https://github.com/lilqasr/Projects/blob/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/README.md)
 
 
 <img src="images/investNic.png" width="400"/>
 
+### [**2. Cardiovascular Disease Analysis**](Projects/Cardiovascular_Disease_Analysis.md)
 
-### [**4. Nicaragua's Municipality Elections Result**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Nicaragua's-Municipality-Elections-Results)
+<img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400"/>
 
-<img src="images/MunicipalitiesElections2022.png" width="400"/>  
+### [**1. Building a dataset from files published on a website**](Building_data_web.md)
 
-### [**5. Apartments for rent in Rome**](https://github.com/lilqasr/Projects/tree/main/Projects_list/Python/Real_State_Roma)
+<img src="images/governmentdocs.jpeg" width="400"/>
 
-<img src="images/rentrome.png" width="400"   />
+
+
 
 ![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 
