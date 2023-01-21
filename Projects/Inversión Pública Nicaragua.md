@@ -160,6 +160,8 @@ The deep analysis of this data was made in a report that has not yet been publis
 
 **[PIP_2017-2022_ANALYSIS](https://nbviewer.org/github/lilqasr/Projects/blob/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/Public_Investment_Program%202017-2022%20Analysis.ipynb)**
 
+[back](./)
+
 
 [^1]: www.snip.gob.ni
 [^2]: http://snip.gob.ni/Portada/PipAnual
