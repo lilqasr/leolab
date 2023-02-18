@@ -28,5 +28,8 @@ First of all, I created a Database, and imported the json file. Then I changed s
 
 <script src="https://gist.github.com/lilqasr/02cdc00f9f6cfa6164b40c3935cae2b3.js"></script>
 
-![image](https://user-images.githubusercontent.com/112327873/219882347-459a0877-9a9e-47ea-a51e-34a3172809aa.png)
+<img width="141" alt="image" src="https://user-images.githubusercontent.com/112327873/219882484-3e5636f8-9d4c-4880-96d2-f808f07c1696.png">
+ 
+![image](https://user-images.githubusercontent.com/112327873/219882493-e2aded4f-1d68-4684-92a7-422dc26add16.png)
 
+It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
