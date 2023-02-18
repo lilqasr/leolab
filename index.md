@@ -5,14 +5,14 @@ layout: default
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-<details>
-<summary> 1. PYTHON </summary> 
-<br> 
+<details><summary>1. PYTHON</summary><br/>
 
 
 [5. Apartments for rent in Rome](Projects/Apartments_for_Rent.md)
 
-<img src="images/rentrome.png" width="400"   />
+<img src="images/rentrome.png" width="400" />
+  
+</details>
 
 ### [**4. Nicaragua's Municipality Elections Result**](Projects/Nicaragua's-Municipality-Elections-Resultsm.md)
 
