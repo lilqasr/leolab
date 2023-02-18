@@ -8,7 +8,7 @@ layout: default
 <details><summary>1. PYTHON</summary>
 <p>
 
-<a href="Projects/Apartments_for_Rent.md">5. Apartments for rent in Rome</a>
+<a style="font-weight:bold" href="Projects/Apartments_for_Rent.md">**5. Apartments for rent in Rome**</a>
  
 </p>
  
