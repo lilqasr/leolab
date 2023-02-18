@@ -34,7 +34,7 @@ First of all, I created a Database, and imported the json file. Then I changed s
 
 It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 
-**2. How many artist did I listen to and Total minutes played. The most played artist, number of times played and minutes**
+**2. How many artist did I listen to and Total minutes played. The most played artist, number of times played and minutes; The top 10 songs played, times and minutes:**
 
 <script src="https://gist.github.com/lilqasr/0c502ecea0e36fcb583c1d969406c3b1.js"></script>
 
@@ -47,6 +47,10 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 <img width="334" alt="image" src="https://user-images.githubusercontent.com/112327873/219882860-ed639d63-5d24-4b18-bb62-1ec9323d99a6.png">
 
 <img width="343" alt="image" src="https://user-images.githubusercontent.com/112327873/219882868-6411fb3c-58ea-4c21-8dad-72c9a6f02269.png">
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/112327873/219883933-ee13e297-c5a2-40a8-b5eb-68dec9ed4d25.png">
+
+<img width="374" alt="image" src="https://user-images.githubusercontent.com/112327873/219883938-3f6126f0-b9d3-4b0e-b045-5d559d1e4db7.png">
 
 **3. Behaviour by Month. Most played artist, Most minutes listened artist, Minutes played by MONTH:**
 
