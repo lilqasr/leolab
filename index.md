@@ -4,9 +4,9 @@ layout: default
 # **PORTFOLIO**
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
+
 <p>
 <details><summary>1. PYTHON</summary><br/>
-
 
 [5. Apartments for rent in Rome](Projects/Apartments_for_Rent.md)
 
@@ -14,6 +14,8 @@ layout: default
   
 </details>
 </p>
+
+
 
 ### [**4. Nicaragua's Municipality Elections Result**](Projects/Nicaragua's-Municipality-Elections-Resultsm.md)
 
