@@ -4,7 +4,7 @@ layout: default
 # **PORTFOLIO**
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
-
+<p>
 <details><summary>1. PYTHON</summary><br/>
 
 
@@ -13,6 +13,7 @@ layout: default
 <img src="images/rentrome.png" width="400" />
   
 </details>
+</p>
 
 ### [**4. Nicaragua's Municipality Elections Result**](Projects/Nicaragua's-Municipality-Elections-Resultsm.md)
 
