@@ -36,7 +36,6 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 
 **2. How many artist did I listen to and Total minutes played. The most played artist, number of times played and minutes**
 
-
 <script src="https://gist.github.com/lilqasr/0c502ecea0e36fcb583c1d969406c3b1.js"></script>
 
 <img width="354" alt="image" src="https://user-images.githubusercontent.com/112327873/219882831-8b4879cf-6126-4bcd-9816-aecec1ebf4db.png">
@@ -49,5 +48,12 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 
 <img width="343" alt="image" src="https://user-images.githubusercontent.com/112327873/219882868-6411fb3c-58ea-4c21-8dad-72c9a6f02269.png">
 
+**3. Behaviour by Month. Most played artist, Most minutes listened artist, Minutes played by MONTH:
 
+<script src="https://gist.github.com/lilqasr/33da37f7b8329b3365da742c34353350.js"></script>
 
+<img width="485" alt="image" src="https://user-images.githubusercontent.com/112327873/219883583-89373551-3a11-4946-86dc-24891480ba77.png">
+
+<img width="495" alt="image" src="https://user-images.githubusercontent.com/112327873/219883590-2d748154-3549-426f-b9b4-b0c09c021455.png">
+
+<img width="329" alt="image" src="https://user-images.githubusercontent.com/112327873/219883604-448f29e5-e4c0-4664-b183-5599f63a2fce.png">
