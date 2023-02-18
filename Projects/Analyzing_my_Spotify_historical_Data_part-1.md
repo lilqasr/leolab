@@ -20,4 +20,13 @@ This first file gives you information about the End Time of the song/track, the 
 
 The second file is the extended streaming history, which includes the history for the lifetime of your account.
 
+<h2 align="center"> Analysis of the last year</h2>
+
+First of all, I created a Database, and imported the json file. Then I changed some parts of the table like names.
+
+1.	The first thing was to know how many records the table has and the period of time cover by the data received:
+
 <script src="https://gist.github.com/lilqasr/02cdc00f9f6cfa6164b40c3935cae2b3.js"></script>
+
+![image](https://user-images.githubusercontent.com/112327873/219882347-459a0877-9a9e-47ea-a51e-34a3172809aa.png)
+
