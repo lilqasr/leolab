@@ -8,7 +8,7 @@ layout: default
 <details><summary><b>PYTHON </b><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /></summary>
 <p>
 
-<a style="font-weight:bold" href="Projects/Apartments_for_Rent.md">5. Apartments for rent in Rome</a>
+<a style="font-weight:bold" href="Projects/Apartments_for_Rent.html">5. Apartments for rent in Rome</a>
  
 </p>
  
