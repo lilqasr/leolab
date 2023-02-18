@@ -4,7 +4,7 @@ layout: default
 # **PORTFOLIO**
 
 <details><summary>1. PYTHON</summary> 
- <p>
+
   
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
@@ -30,7 +30,6 @@ layout: default
 
 <img src="images/governmentdocs.jpeg" width="400"/>
 
-</p>
 </details>
 
 
