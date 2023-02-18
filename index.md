@@ -8,11 +8,11 @@ layout: default
 <details><summary>1. PYTHON</summary>
 <p>
 
-<a style="font-weight:bold" href="Projects/Apartments_for_Rent.md">**5. Apartments for rent in Rome**</a>
+<a style="font-weight:bold" href="Projects/Apartments_for_Rent.md">5. Apartments for rent in Rome</a>
  
 </p>
  
-<img src="images/rentrome.png" width="400"/>
+<img src="images/rentrome.png" width="500"/>
 
 
 </details>
