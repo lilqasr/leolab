@@ -30,6 +30,23 @@ First of all, I created a Database, and imported the json file. Then I changed s
 
 <img width="141" alt="image" src="https://user-images.githubusercontent.com/112327873/219882484-3e5636f8-9d4c-4880-96d2-f808f07c1696.png">
  
-![image](https://user-images.githubusercontent.com/112327873/219882493-e2aded4f-1d68-4684-92a7-422dc26add16.png)
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/112327873/219882612-06165337-3c31-461b-9f0c-6896633f1e9a.png">
 
 It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
+
+2.	How many artist did I listen to and Total minutes played. The most played artist, number of times played and minutes
+
+<script src="https://gist.github.com/lilqasr/0c502ecea0e36fcb583c1d969406c3b1.js"></script>
+
+<img width="354" alt="image" src="https://user-images.githubusercontent.com/112327873/219882831-8b4879cf-6126-4bcd-9816-aecec1ebf4db.png">
+
+<img width="344" alt="image" src="https://user-images.githubusercontent.com/112327873/219882835-f797494f-c91a-4734-81b7-a87dc7866a8f.png">
+
+<img width="344" alt="image" src="https://user-images.githubusercontent.com/112327873/219882855-8370c88d-2966-49ab-a1dd-f39f3586566e.png">
+
+<img width="334" alt="image" src="https://user-images.githubusercontent.com/112327873/219882860-ed639d63-5d24-4b18-bb62-1ec9323d99a6.png">
+
+<img width="343" alt="image" src="https://user-images.githubusercontent.com/112327873/219882868-6411fb3c-58ea-4c21-8dad-72c9a6f02269.png">
+
+
+
