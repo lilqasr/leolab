@@ -24,7 +24,7 @@ The second file is the extended streaming history, which includes the history fo
 
 First of all, I created a Database, and imported the json file. Then I changed some parts of the table like names.
 
-1. The first thing was to know how many records the table has and the period of time cover by the data received:
+**1. The first thing was to know how many records the table has and the period of time cover by the data received:**
 
 <script src="https://gist.github.com/lilqasr/02cdc00f9f6cfa6164b40c3935cae2b3.js"></script>
 
@@ -34,7 +34,8 @@ First of all, I created a Database, and imported the json file. Then I changed s
 
 It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 
-2. How many artist did I listen to and Total minutes played. The most played artist, number of times played and minutes
+**2. How many artist did I listen to and Total minutes played. The most played artist, number of times played and minutes**
+
 
 <script src="https://gist.github.com/lilqasr/0c502ecea0e36fcb583c1d969406c3b1.js"></script>
 
