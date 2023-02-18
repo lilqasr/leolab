@@ -5,7 +5,7 @@ layout: default
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /></summary>
+<details><summary><b>Nicaragua municipality elections results</b><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /></summary>
 <p>
 
 <a style="font-weight:bold" href="Projects/Apartments_for_Rent.md">5. Apartments for rent in Rome</a>
