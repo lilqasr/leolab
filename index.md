@@ -8,10 +8,8 @@ layout: default
 <details><summary>1. PYTHON</summary>
  <p>
 
-<a href="Projects/Apartments_for_Rent.md">Apartments for rent in Rome</a>
-  
-  
-[5. Apartments for rent in Rome](Projects/Apartments_for_Rent.md)
+<a href="Projects/Apartments_for_Rent.md">5. Apartments for rent in Rome</a>
+ 
 
 <img src="images/rentrome.png" width="400" />
 
