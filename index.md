@@ -5,7 +5,7 @@ layout: default
 
 <details><summary>1. PYTHON</summary> 
 
-<a href="Projects/Nicaragua's-Municipality-Elections-Resultsm.md">4. Nicaragua's Municipality Elections Result</a> 
+<a href="Projects/Nicaragua's-Municipality-Elections-Resultsm.html">4. Nicaragua's Municipality Elections Result</a> 
   
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
