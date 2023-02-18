@@ -47,7 +47,7 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# [Spotify] (https://github.com/lilqasr/leolab/blob/portfolio/Projects/Analyzing_my_Spotify_historical_Data_part-1.md)
+# [Spotify](https://github.com/lilqasr/leolab/blob/portfolio/Projects/Analyzing_my_Spotify_historical_Data_part-1.md)
 
 # Header 1
 
