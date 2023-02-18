@@ -6,14 +6,15 @@ layout: default
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
 <details><summary>1. PYTHON</summary>
- <p>
+<p>
 
 <a href="Projects/Apartments_for_Rent.md">5. Apartments for rent in Rome</a>
  
-
-<img src="images/rentrome.png" width="400" />
-
 </p>
+ 
+<img src="images/rentrome.png" width="400"/>
+
+
 </details>
 
 
