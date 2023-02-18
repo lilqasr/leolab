@@ -19,3 +19,5 @@ That is what you will import to your DBMS, in this case I used mysql workbench.
 This first file gives you information about the End Time of the song/track, the artist name, the track name, and the milliseconds played. 
 
 The second file is the extended streaming history, which includes the history for the lifetime of your account.
+
+<script src="https://gist.github.com/lilqasr/02cdc00f9f6cfa6164b40c3935cae2b3.js"></script>
