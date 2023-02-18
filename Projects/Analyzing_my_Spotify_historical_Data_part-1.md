@@ -48,7 +48,7 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 
 <img width="343" alt="image" src="https://user-images.githubusercontent.com/112327873/219882868-6411fb3c-58ea-4c21-8dad-72c9a6f02269.png">
 
-**3. Behaviour by Month. Most played artist, Most minutes listened artist, Minutes played by MONTH:
+**3. Behaviour by Month. Most played artist, Most minutes listened artist, Minutes played by MONTH:**
 
 <script src="https://gist.github.com/lilqasr/33da37f7b8329b3365da742c34353350.js"></script>
 
