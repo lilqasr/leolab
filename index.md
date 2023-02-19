@@ -14,14 +14,13 @@ layout: default
 
 </p>
  
-
-
- 
 <p>
 <a style="font-weight:bold" href="Projects/Nicaragua's-Municipality-Elections-Results.html">4. Nicaragua's Municipality Elections Result</a>
+<img src="images/MunicipalitiesElections2022.png" width="400"/>
+ 
 </p>
  
-<img src="images/MunicipalitiesElections2022.png" width="400"/>  
+  
 
  
 <p>
