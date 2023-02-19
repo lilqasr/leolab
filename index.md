@@ -64,7 +64,7 @@ layout: default
 
 <p>
  
-<a style="font-weight:bold" href="https://public.tableau.com/app/profile/ep2ea">2. Others</a>
+<a style="font-weight:bold" href="https://public.tableau.com/app/profile/ep2ea">2. Others</a><br>
 
 
 <img src="images/governmentdocs.jpeg" width="400"/>
