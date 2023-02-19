@@ -5,7 +5,7 @@ layout: default
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /> <h2 style="color: blue">HTML Articles</h2><b>PYTHON </b></summary>
+<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /> <h2 style="color: blue">PYTHON</h2></summary>
 
 <p>
  
@@ -51,7 +51,7 @@ layout: default
 
 ![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 
-<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/tableau/blue" />  <b>TABLEAU </b></summary>
+<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/tableau/blue" /> <h2 style="color: blue">TABLEAU</h2></summary>
 
 <p>
  
