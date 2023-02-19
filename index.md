@@ -5,7 +5,7 @@ layout: default
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-<details><summary><b>PYTHON </b><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /></summary>
+<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /><b>PYTHON </b></summary>
 <p>
 
 <a style="font-weight:bold" href="Projects/Apartments_for_Rent.html">5. Apartments for rent in Rome</a>
@@ -13,8 +13,12 @@ layout: default
 </p>
  
 <img src="images/rentrome.png" width="500"/>
+<p>
 
-
+<a href="Projects/Nicaragua's-Municipality-Elections-Results.html">4. Nicaragua's Municipality Elections Result</a>
+ 
+</p>
+<img src="images/MunicipalitiesElections2022.png" width="400"/>  
 </details>
 
 
