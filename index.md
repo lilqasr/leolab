@@ -15,34 +15,29 @@ layout: default
 <img src="images/rentrome.png" width="500"/>
 
 <p>
-
 <a style="font-weight:bold" href="Projects/Nicaragua's-Municipality-Elections-Results.html">4. Nicaragua's Municipality Elections Result</a>
- 
 </p>
  
 <img src="images/MunicipalitiesElections2022.png" width="400"/>  
 
 <p>
-
 <a style="font-weight:bold" href="Projects/Inversión Pública Nicaragua.html">3. Nicaragua Public Investment Program Analysis</a>
- 
 </p>
  
 <img src="images/investNic.png" width="400"/>
 
 <p>
-
 <a style="font-weight:bold" href="Projects/Cardiovascular_Disease_Analysis.html">2. Cardiovascular Disease Analysis</a>
- 
 </p>
+
 <img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400"/>
 
 <p>
-
 <a style="font-weight:bold" href="Building_data_web.html">1. Building a dataset from files published on a website</a>
+</p> 
 
 <img src="images/governmentdocs.jpeg" width="400"/>
-</p> 
+
  
 </details>
 
