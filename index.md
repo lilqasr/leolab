@@ -7,12 +7,14 @@ layout: default
 
 <details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />  <b>PYTHON </b></summary>
 
- 
 <p>
+ 
 <a style="font-weight:bold" href="Projects/Apartments_for_Rent.html">5. Apartments for rent in Rome</a>
+<img src="images/rentrome.png" width="500"/>
+
 </p>
  
-<img src="images/rentrome.png" width="500"/>
+
 
  
 <p>
