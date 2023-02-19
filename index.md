@@ -57,7 +57,7 @@ layout: default
 <h3><a style="font-weight:bold" href="https://public.tableau.com/app/profile/lilqasr88">1. Tableau Public profile</a><br></h3>
 
 
-<img src="images/governmentdocs.jpeg" width="400"/>
+<img src="images/TABLEAU.png" width="400"/>
 
 </p>
 
