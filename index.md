@@ -49,10 +49,12 @@ layout: default
 
 </details>
 
-<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/tableau/aqua" />  <b>TABLEAU </b></summary>
+![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
+
+<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/tableau/blue" />  <b>TABLEAU </b></summary>
 <p>
  
-<a style="font-weight:bold" href="https://public.tableau.com/app/profile/lilqasr88"><b>1. Tableau Public profile</b></a>
+<a style="font-weight:bold" href="https://public.tableau.com/app/profile/lilqasr88">1. Tableau Public profile</a>
 
 <img src="images/governmentdocs.jpeg" width="400"/>
  
@@ -60,11 +62,12 @@ layout: default
 
 <p>
  
-<a style="font-weight:bold" href="https://public.tableau.com/app/profile/ep2ea"><b>2. Others</b></a>
+<a style="font-weight:bold" href="https://public.tableau.com/app/profile/ep2ea">2. Others</a>
 
 <img src="images/governmentdocs.jpeg" width="400"/>
  
-</p> 
+</p>
+
 </details>
  
 ![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
