@@ -49,30 +49,24 @@ layout: default
 
 </details>
 
-
-
-
-### [**4. Nicaragua's Municipality Elections Result**](Projects/Nicaragua's-Municipality-Elections-Resultsm.md)
-
-<img src="images/MunicipalitiesElections2022.png" width="400"/>  
-
-
-### [**3. Nicaragua Public Investment Program Analysis**](Projects/Inversión Pública Nicaragua.md)
-
-
-<img src="images/investNic.png" width="400"/>
-
-### [**2. Cardiovascular Disease Analysis**](Projects/Cardiovascular_Disease_Analysis.md)
-
-<img src="images/cardiovascular-diseases-treatment-illustration-flat-1-scaled.jpeg" width="400"/>
-
-### [**1. Building a dataset from files published on a website**](Building_data_web.md)
+<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/tableau/aqua" />  <b>TABLEAU </b></summary>
+<p>
+ 
+<a style="font-weight:bold" href="https://public.tableau.com/app/profile/lilqasr88"><b>1. Tableau Public profile</b></a>
 
 <img src="images/governmentdocs.jpeg" width="400"/>
+ 
+</p>
 
+<p>
+ 
+<a style="font-weight:bold" href="https://public.tableau.com/app/profile/ep2ea"><b>2. Others</b></a>
+
+<img src="images/governmentdocs.jpeg" width="400"/>
+ 
+</p> 
 </details>
-
-
+ 
 ![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/microsoftexcel/blue" /> <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
