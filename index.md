@@ -52,18 +52,21 @@ layout: default
 ![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 
 <details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/tableau/blue" />  <b>TABLEAU </b></summary>
+
 <p>
  
 <a style="font-weight:bold" href="https://public.tableau.com/app/profile/lilqasr88">1. Tableau Public profile</a>
- 
+
+
 <img src="images/governmentdocs.jpeg" width="400"/>
- 
+
 </p>
 
 <p>
  
 <a style="font-weight:bold" href="https://public.tableau.com/app/profile/ep2ea">2. Others</a>
- 
+
+
 <img src="images/governmentdocs.jpeg" width="400"/>
  
 </p>
