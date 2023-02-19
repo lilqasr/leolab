@@ -5,7 +5,7 @@ layout: default
 
 <img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" />
 
-<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /> <h2 style="color: blue">PYTHON</h2></summary>
+<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /><h2 style="color: blue"> PYTHON</h2></summary>
 
 <p>
  
