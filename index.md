@@ -74,7 +74,7 @@ layout: default
  
 ![divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
 
-<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/mysql/aqua" /> <img height="32" width="32" src="https://cdn.simpleicons.org/sqlite/aqua" /> <img height="32" width="32" src="https://cdn.simpleicons.org/postgresql/aqua" /> <h2 style="color: blue"> SQL</h2></summary>
+<details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/mysql/blue" /> <img height="32" width="32" src="https://cdn.simpleicons.org/sqlite/blue" /> <img height="32" width="32" src="https://cdn.simpleicons.org/postgresql/blue" /> <h2 style="color: blue"> SQL</h2></summary>
 
 <h3><a style="font-weight:bold" href="Projects/Analyzing_my_Spotify_historical_Data_part-1.html">1. My Last Year Spotify streaming data</a><br></h3>
 
