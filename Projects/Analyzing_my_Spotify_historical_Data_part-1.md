@@ -64,15 +64,10 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 
 **4. Which was the weekday that i most listened to it in minutes?**
 
-<script src="https://gist.github.com/lilqasr/68e81f76aca959a43260093ffc225e3c.js"></script>
-
-![image](https://user-images.githubusercontent.com/112327873/220107619-d432ecb9-13fa-4c2f-b972-260ddc7c64af.png)
-
-
-
-
 ~~~~sql
 -- FIND HOW MANY MINUTES LISTENED BY DAY
+-- Create a new column to get the weekday
+
 ALTER TABLE STREAMINGHISTORY
 ADD COLUMN DAY_PLAYED INT NOT NULL AFTER PLAYED_ON;
 
@@ -86,6 +81,30 @@ FROM STREAMINGHISTORY
 GROUP BY DAY_PLAYED ORDER BY `MINUTES PLAYED` DESC;
 ~~~~
 
-<pre>
-  <p>Example text here...</p>
-</pre>
+![image](https://user-images.githubusercontent.com/112327873/220107619-d432ecb9-13fa-4c2f-b972-260ddc7c64af.png)
+
+The day with the most minutes played in my last year was Thursday (5), because MySQL encode "1" as sunday.
+
+**5. Parts of the day with the most minutes listened to:**
+
+```sql
+-- MOST TIME LISTENED BY PART OF DAY:
+
+-- CREATE PART OF DAY COLUMN
+ALTER TABLE STREAMINGHISTORY
+ADD COLUMN PART_DAY VARCHAR(100) NOT NULL AFTER PLAYED_ON;
+
+UPDATE STREAMINGHISTORY
+SET PART_DAY = CASE WHEN HOUR(PLAYED_ON) IN ('5','6','7','8','9','10','11','12') THEN 'MORNING'
+WHEN HOUR(PLAYED_ON) IN ('13','14','15','16','17') THEN 'AFTERNOON'
+WHEN HOUR(PLAYED_ON) IN ('18','19','20','21') THEN 'EVENING'
+WHEN HOUR(PLAYED_ON) IN ('22','23','0','1','2','3','4') THEN 'NIGHT' END;
+
+SELECT PART_DAY, SUM(MILLISECONDSPLAYED/60000) MINUTES_PLAYED
+FROM STREAMINGHISTORY
+GROUP BY PART_DAY ORDER BY 2 DESC;
+```
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/112327873/220145056-6217b4c7-956a-4d2d-849b-4f77d4466a5f.png">
+
+As you can see, the moment of the day i listened to the most was "Afternoon", followed by "Evening".
+
