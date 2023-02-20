@@ -68,7 +68,7 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 
 ![image](https://user-images.githubusercontent.com/112327873/220107619-d432ecb9-13fa-4c2f-b972-260ddc7c64af.png)
 
-```mysql
+``` sql
 -- FIND HOW MANY MINUTES LISTENED BY DAY
 
 ALTER TABLE STREAMINGHISTORY
