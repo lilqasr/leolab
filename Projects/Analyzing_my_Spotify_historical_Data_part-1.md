@@ -61,3 +61,27 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 <img width="495" alt="image" src="https://user-images.githubusercontent.com/112327873/219883590-2d748154-3549-426f-b9b4-b0c09c021455.png">
 
 <img width="329" alt="image" src="https://user-images.githubusercontent.com/112327873/219883604-448f29e5-e4c0-4664-b183-5599f63a2fce.png">
+
+**4. Which was the weekday that i most listened to it in minutes?**
+
+<script src="https://gist.github.com/lilqasr/68e81f76aca959a43260093ffc225e3c.js"></script>
+
+![image](https://user-images.githubusercontent.com/112327873/220107619-d432ecb9-13fa-4c2f-b972-260ddc7c64af.png)
+
+```sql
+-- FIND HOW MANY MINUTES LISTENED BY DAY
+
+ALTER TABLE STREAMINGHISTORY
+ADD COLUMN DAY_PLAYED INT NOT NULL AFTER PLAYED_ON;
+
+UPDATE STREAMINGHISTORY
+SET DAY_PLAYED = DAYOFWEEK(PLAYED_ON);
+
+SELECT * FROM STREAMINGHISTORY;
+
+SELECT DAY_PLAYED, SUM(MILLISECONDSPLAYED/60000) `MINUTES PLAYED`
+FROM STREAMINGHISTORY
+GROUP BY DAY_PLAYED ORDER BY `MINUTES PLAYED` DESC;
+```
+
+
