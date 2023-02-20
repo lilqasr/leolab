@@ -69,8 +69,9 @@ It was exactly one year, from Jan 20th, 2022 to Jan 19th 2023.
 ![image](https://user-images.githubusercontent.com/112327873/220107619-d432ecb9-13fa-4c2f-b972-260ddc7c64af.png)
 
 <pre>
-<code>-- FIND HOW MANY MINUTES LISTENED BY DAY
+-- FIND HOW MANY MINUTES LISTENED BY DAY
 
+<code>
 ALTER TABLE STREAMINGHISTORY
 ADD COLUMN DAY_PLAYED INT NOT NULL AFTER PLAYED_ON;
 
