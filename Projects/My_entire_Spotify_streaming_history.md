@@ -24,7 +24,7 @@ SELECT * FROM spotihist;
 
 
 <figure>
-<img width="430" alt="image" src="https://user-images.githubusercontent.com/112327873/220428351-cebd81ad-23e4-4d95-8f98-6b8c47accb73.png">
+<img alt="image" src="https://user-images.githubusercontent.com/112327873/220428351-cebd81ad-23e4-4d95-8f98-6b8c47accb73.png" style="width:100%">
 <figcaption align = "center"><b> Data technical description.</b> </figcaption>
 
 </figure>
