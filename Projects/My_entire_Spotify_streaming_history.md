@@ -7,7 +7,7 @@ I PLAYED A SONG/TRACK ON SPOTIFY.
 I received a zip file with all the information containing four files: three json files, and one PDF, which contains the explanation of the data sent.
 The json files where all the data captured with the streaming information. 
 
-## The process
+## The preprocessing
 
 **The first thing was to import the json files and get it into individuals tables, and then make the union.**
 
@@ -38,10 +38,12 @@ CHANGE COLUMN ts when_played VARCHAR(100),
 CHANGE COLUMN master_metadata_track_name track_name VARCHAR(200),
 CHANGE COLUMN master_metadata_album_artist_name artist_name VARCHAR(200),
 CHANGE COLUMN master_metadata_album_album_name album_name VARCHAR(200);
+```
 
-/* I realize there was some characters that did not allow me to convert the datetime column (ts/when_played).
-So i had to replace this characters:*/
+I realize there was some characters that did not allow me to convert the datetime column (ts/when_played).
+So i had to replace this characters:
 
+```sql
 UPDATE spotihist
 SET when_played = REPLACE(REPLACE(when_played, 'T', ' '),'Z', ''); 
 
@@ -50,6 +52,20 @@ SET when_played = REPLACE (when_played, 'Z', '');
 
 ALTER TABLE spotihist
 MODIFY when_played DATETIME;
+```
+**After this part, i had the final table to make my analysis.**
+
+## The analysis
+
+For this analysis i used 6 of the variables/columns/attributes (as you wish call them), but then i created others, extracted from my datetime column.
+
+### 1. The first thing to know is the period of time covered by the data:
+
+```sql
+SELECT MIN(when_played) start_date,
+MAX(when_played) end_date,
+DATEDIFF(MAX(when_played),MIN(when_played)) total_days
+FROM spotihist;
 ```
 
 
