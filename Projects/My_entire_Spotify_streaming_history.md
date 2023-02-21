@@ -68,4 +68,61 @@ DATEDIFF(MAX(when_played),MIN(when_played)) total_days
 FROM spotihist;
 ```
 
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220452828-76836401-3b45-4a72-b953-0d04a97e1887.png">
+
+According to this, the first time i played a song/track on spotify was on August 8th, 2014, like 8.5 years ago; **but, which song did i played?**
+
+```sql
+SELECT when_played, track_name, artist_name, ms_played, conn_country, reason_end 
+FROM spotihist
+WHERE when_played = (SELECT min(when_played) FROM spotihist);
+```
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/112327873/220454368-fe5758ce-ce3b-438d-8639-bea2c15245fe.png">
+
+_I actually don't remember that song, but it's fine!!!_
+
+###2. How many artist i've listened to it; how many songs; how many hours in all of these years; which countries from; 
+
+```sql
+-- HOW MANY ARTISTS
+SELECT COUNT(DISTINCT(artist_name)) AS `Q. ARTIST PLAYED`
+FROM spotihist;
+```
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220456807-7f9d53b7-3fff-43fa-98ad-b2ccab9c6998.png">
+
+_**Looks like less than an artist by day (0.88)**_
+
+```sql
+-- HOW MANY HOURS
+SELECT ROUND(SUM(ms_played/3600000),2) as `TOTAL HOURS PLAYED`
+FROM spotihist;
+```
+
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220458733-3e6f2da1-b27e-4d70-adf2-ca119fae357a.png">
+
+_**Something like 0.63 hours per day**_
+
+```sql
+-- HOW MANY SONGS
+SELECT COUNT(DISTINCT(track_name)) AS `TOTAL # OF SONGS`
+FROM spotihist;
+```
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220460647-0f8e5a43-9390-452c-9d5a-2c24ec0e2562.png">
+
+_**It was like 2.62 songs per day**_
+
+```sql
+-- TOTAL HOURS PER COUNTRY?
+SELECT conn_country, ROUND(SUM(ms_played/3600000),2) AS `# HOURS BY COUNTRY`
+FROM spotihist
+GROUP BY conn_country ORDER BY 2 DESC;
+```
+
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220463887-f4cac670-c3be-4d02-884e-72d8da9f863b.png">
+
+_**I played spotify from 14 differents country (i haven't visited that many countries, but it is because of sometimes i play it with vpn)**_
+
+
+
 
