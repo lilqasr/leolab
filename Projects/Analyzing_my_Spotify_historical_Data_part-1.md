@@ -108,3 +108,25 @@ GROUP BY PART_DAY ORDER BY 2 DESC;
 
 As you can see, the moment of the day i listened to the most was "Afternoon", followed by "Evening".
 
+## One last thing to do: a quick time series analysis.
+
+I want to know the hours change between each month:
+
+```sql
+-- MONTHLY CHANGE MINUTES LISTENED:
+
+WITH TIMESERIESTREAM AS (
+SELECT MONTH_PLAYED, SUM(MILLISECONDSPLAYED/3600000) AS HOURS_PLAYED,
+LAG(SUM(MILLISECONDSPLAYED/3600000)) OVER (ORDER BY MONTH_PLAYED) AS PREV_PLAYED
+FROM STREAMINGHISTORY
+GROUP BY MONTH_PLAYED)
+SELECT *, (HOURS_PLAYED-PREV_PLAYED) as TIME_CHANGE,
+ROUND(((HOURS_PLAYED/PREV_PLAYED)-1)*100)+'%' PCT_CHANGE
+FROM TIMESERIESTREAM;
+```
+
+![image](https://user-images.githubusercontent.com/112327873/220348874-6be73e96-1916-4345-9615-2344019c8dbb.png)
+
+
+As you could see, i used a CTE to create a new column in order to create another and calculate the changes between each month.
+
