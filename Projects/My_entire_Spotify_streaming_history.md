@@ -9,7 +9,7 @@ The json files where all the data captured with the streaming information.
 
 ## The process
 
-**The first thing was to import the json files on individuals tables and then make the union.**
+**The first thing was to import the json files and get it into individuals tables, and then make the union.**
 
 ```sql
 CREATE TABLE spotihist (
@@ -30,4 +30,26 @@ SELECT * FROM spotihist;
 </figure>
 
 
-**Once i had the whole table
+**Once i had the whole table, it was necessary to make some changes.**
+
+```sql
+ALTER TABLE spotihist
+CHANGE COLUMN ts when_played VARCHAR(100),
+CHANGE COLUMN master_metadata_track_name track_name VARCHAR(200),
+CHANGE COLUMN master_metadata_album_artist_name artist_name VARCHAR(200),
+CHANGE COLUMN master_metadata_album_album_name album_name VARCHAR(200);
+
+/* I realize there was some characters that did not allow me to convert the datetime column (ts/when_played).
+So i had to replace this characters:*/
+
+UPDATE spotihist
+SET when_played = REPLACE(REPLACE(when_played, 'T', ' '),'Z', ''); 
+
+UPDATE spotihist
+SET when_played = REPLACE (when_played, 'Z', '');
+
+ALTER TABLE spotihist
+MODIFY when_played DATETIME;
+```
+
+
