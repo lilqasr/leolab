@@ -55,7 +55,7 @@ MODIFY when_played DATETIME;
 ```
 **After this part, i had the final table to make my analysis.**
 
-## The analysis
+## **I. The General analysis**
 
 For this analysis i used 6 of the variables/columns/attributes (as you wish call them), but then i created others, extracted from my datetime column.
 
@@ -82,7 +82,7 @@ WHERE when_played = (SELECT min(when_played) FROM spotihist);
 
 _I actually don't remember that song, but it's fine!!!_
 
-###2. How many artist i've listened to it; how many songs; how many hours in all of these years; which countries from; 
+### 2. How many artist i've listened to it; how many songs; how many hours in all of these years; which countries from; 
 
 ```sql
 -- HOW MANY ARTISTS
@@ -123,6 +123,51 @@ GROUP BY conn_country ORDER BY 2 DESC;
 
 _**I played spotify from 14 differents country (i haven't visited that many countries, but it is because of sometimes i play it with vpn)**_
 
+### 3. What is my top 10 most listened artists, and songs?
+
+```sql
+-- TOP 10 MOST LISTENED ARTIST AND SONGS:
+
+SELECT artist_name, ROUND(SUM(ms_played/3600000),2) AS `HOURS PLAYED`
+FROM SPOTIHIST
+GROUP BY ARTIST_NAME ORDER BY 2 DESC LIMIT 10;
+```
+
+<img width="450" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-17-47-45.png">
+
+```sql
+SELECT TRACK_NAME, ROUND(SUM(ms_played/3600000),2) AS `HOURS PLAYED`
+FROM SPOTIHIST
+GROUP BY TRACK_NAME ORDER BY 2 DESC LIMIT 10;
+```
+
+<img width="450" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-18-36-30.png">
+
+**As you can see, there is an artist and track name called 'None', so i had to figure it out, who is this.**
+
+```SQL
+SELECT *
+FROM spotihist
+where artist_name = 'None';
+
+SELECT spotify_track_uri, episode_name, episode_show_name, spotify_episode_uri
+FROM spotihist
+where episode_show_name <> 'None';
+```
+
+<img width="100%" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png">
+
+**I realize it was the podcast and others that didn't have any kind of information;**
+
+<img width="100%" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-18-50-40.png">
+
+## **II. A time series analysis**
+
+Since this data has information for almost 9 years, i wanted to know what 
+
+![](/assets/My_entire_Spotify_streaming_history/2023-02-22-18-10-53.png)
 
 
+<img>${imageFileName}</img>
 
+${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}
