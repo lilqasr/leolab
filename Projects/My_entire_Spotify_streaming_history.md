@@ -155,7 +155,7 @@ FROM spotihist
 where episode_show_name <> 'None';
 ```
 
-<img width="100%" src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png"/>
+<img width="100%" src="/assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png"/>
 
 **I realize it was the podcast and others that didn't have any kind of information;**
 
