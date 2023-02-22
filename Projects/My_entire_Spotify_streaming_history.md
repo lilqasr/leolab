@@ -133,7 +133,7 @@ FROM SPOTIHIST
 GROUP BY ARTIST_NAME ORDER BY 2 DESC LIMIT 10;
 ```
 
-<img width="450" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-17-47-45.png">
+<img width="450" src="assets/My_entire_Spotify_streaming_history/2023-02-22-17-47-45.png">
 
 ```sql
 SELECT TRACK_NAME, ROUND(SUM(ms_played/3600000),2) AS `HOURS PLAYED`
@@ -141,7 +141,7 @@ FROM SPOTIHIST
 GROUP BY TRACK_NAME ORDER BY 2 DESC LIMIT 10;
 ```
 
-<img width="450" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-18-36-30.png">
+<img width="450" src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-36-30.png">
 
 **As you can see, there is an artist and track name called 'None', so i had to figure it out, who is this.**
 
@@ -155,11 +155,11 @@ FROM spotihist
 where episode_show_name <> 'None';
 ```
 
-<img width="100%" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png">
+<img width="100%" src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png">
 
 **I realize it was the podcast and others that didn't have any kind of information;**
 
-<img width="100%" src="/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-18-50-40.png">
+<img width="100%" src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-50-40.png">
 
 ## **II. A time series analysis**
 
