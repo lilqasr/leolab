@@ -133,7 +133,11 @@ FROM SPOTIHIST
 GROUP BY ARTIST_NAME ORDER BY 2 DESC LIMIT 10;
 ```
 
-<img width="450" src="/assets/My_entire_Spotify_streaming_history/2023-02-22-17-47-45.png"/>
+<img width="450" src="images/My_entire_Spotify_streaming_history/2023-02-22-21-24-58.png"/>
+
+![](/images/My_entire_Spotify_streaming_history/2023-02-22-21-24-58.png)
+
+![](/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-21-19-29.png)
 
 ```sql
 SELECT TRACK_NAME, ROUND(SUM(ms_played/3600000),2) AS `HOURS PLAYED`
@@ -171,3 +175,5 @@ Since this data has information for almost 9 years, i wanted to know what
 <img>${imageFileName}</img>
 
 ${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}
+
+![](/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-19-47-01.png)
