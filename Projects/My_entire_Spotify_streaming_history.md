@@ -133,11 +133,7 @@ FROM SPOTIHIST
 GROUP BY ARTIST_NAME ORDER BY 2 DESC LIMIT 10;
 ```
 
-<img width="450" src="images/My_entire_Spotify_streaming_history/2023-02-22-21-24-58.png"/>
-
-![](/images/My_entire_Spotify_streaming_history/2023-02-22-21-24-58.png)
-
-![](/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-21-19-29.png)
+<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-17-47-45.png" width="450" />
 
 ```sql
 SELECT TRACK_NAME, ROUND(SUM(ms_played/3600000),2) AS `HOURS PLAYED`
@@ -145,7 +141,7 @@ FROM SPOTIHIST
 GROUP BY TRACK_NAME ORDER BY 2 DESC LIMIT 10;
 ```
 
-<img width="450" src="/assets/My_entire_Spotify_streaming_history/2023-02-22-18-36-30.png"/>
+<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-36-30.png" width="450" />
 
 **As you can see, there is an artist and track name called 'None', so i had to figure it out, who is this.**
 
@@ -159,11 +155,11 @@ FROM spotihist
 where episode_show_name <> 'None';
 ```
 
-<img width="100%" src="/assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png"/>
+<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png" width="100%" />
 
 **I realize it was the podcast and others that didn't have any kind of information;**
 
-<img width="100%" src="/assets/My_entire_Spotify_streaming_history/2023-02-22-18-50-40.png"/>
+<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-50-40.png" width="100%" />
 
 ## **II. A time series analysis**
 
@@ -175,5 +171,3 @@ Since this data has information for almost 9 years, i wanted to know what
 <img>${imageFileName}</img>
 
 ${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}
-
-![](/Users/leona/Documents/Personales/PORTFOLIO/leolab/assets/My_entire_Spotify_streaming_history/2023-02-22-19-47-01.png)
