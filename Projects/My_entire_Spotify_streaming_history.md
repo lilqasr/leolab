@@ -133,7 +133,7 @@ FROM SPOTIHIST
 GROUP BY ARTIST_NAME ORDER BY 2 DESC LIMIT 10;
 ```
 
-<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-17-47-45.png" width="450" />
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220754521-4c129b82-cc7f-459e-895b-086d52cb83cc.png">
 
 ```sql
 SELECT TRACK_NAME, ROUND(SUM(ms_played/3600000),2) AS `HOURS PLAYED`
@@ -141,11 +141,12 @@ FROM SPOTIHIST
 GROUP BY TRACK_NAME ORDER BY 2 DESC LIMIT 10;
 ```
 
-<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-36-30.png" width="450" />
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220754595-fc6ce17d-d134-4086-9ade-1a2f5930e841.png">
 
-**As you can see, there is an artist and track name called 'None', so i had to figure it out, who is this.**
+**As you can see, there is an artist and track name called 'None', so i had to figure it out, who is this; besides that, looks like my favourite artist
+is Kings Of Leon, and my favourite song "En la ciudad de la furia" by Soda Stereo.**
 
-```SQL
+```sql
 SELECT *
 FROM spotihist
 where artist_name = 'None';
@@ -155,11 +156,20 @@ FROM spotihist
 where episode_show_name <> 'None';
 ```
 
-<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-48-00.png" width="100%" />
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/112327873/220752792-baf41758-042d-4d86-845e-b11ba7b497d0.png">
 
-**I realize it was the podcast and others that didn't have any kind of information;**
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/112327873/220753264-f0f214f8-8c41-4781-9058-279802d57f0f.png">
 
-<img src="assets/My_entire_Spotify_streaming_history/2023-02-22-18-50-40.png" width="100%" />
+
+**I realize it was all the podcasts i played, and others that didn't have any kind of information; so the last thing I wanted to know here was 
+my favourites podcast:**
+```sql
+SELECT episode_show_name, ROUND(SUM(ms_played/3600000),2) AS `HOURS PLAYED`
+FROM spotihist
+where episode_show_name <> 'None'
+GROUP BY episode_show_name ORDER BY 2 DESC LIMIT 10;
+```
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220753748-691bc699-1c36-4e00-ade0-74d1aeaf55b2.png">
 
 ## **II. A time series analysis**
 
