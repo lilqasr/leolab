@@ -173,11 +173,27 @@ GROUP BY episode_show_name ORDER BY 2 DESC LIMIT 10;
 
 ## **II. A time series analysis**
 
-Since this data has information for almost 9 years, i wanted to know what 
+As you can see at the beggining, this dataset is a collection of information from 2014 to beggining 2023. That means that i can do a time series analysis.
 
-![](/assets/My_entire_Spotify_streaming_history/2023-02-22-18-10-53.png)
+### 1. Hours listened to per year:
 
+```sql
+WITH YEARS_PLAYED AS (
+SELECT EXTRACT(YEAR FROM WHEN_PLAYED) AS YEAR_PLAYED, SUM(MS_PLAYED/3600000) AS `HOURS_PLAYED`,
+LAG(SUM(MS_PLAYED/3600000)) OVER (ORDER BY EXTRACT(YEAR FROM WHEN_PLAYED)) AS PREV_HR_PLAYED
+FROM SPOTIHIST
+GROUP BY YEAR_PLAYED)
+SELECT *, 
+(HOURS_PLAYED-PREV_HR_PLAYED) as HOURS_CHANGE,
+ROUND(((HOURS_PLAYED/PREV_HR_PLAYED)-1)*100,2) PCT_CHANGE
+FROM YEARS_PLAYED;
+```
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220896261-d3834bfd-61e5-4bea-9a09-4c55797112e4.png">
 
-<img>${imageFileName}</img>
+_**This table gives me a lot of information (I can discard the first year (2014 because it recorded just 4 months):**_
 
-${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}
+  a. First of all, the year which I listened the most hours was 2021, and the least was 2020;
+  b. Between 2017 and 2020 i reduced a lot my time listening to spotify;
+  c. In 2021 I increased to the most my listened hours, but then in 2022 I listened it to few hours.
+  
+
