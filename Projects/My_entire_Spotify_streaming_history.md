@@ -191,9 +191,8 @@ FROM YEARS_PLAYED;
 <img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220896261-d3834bfd-61e5-4bea-9a09-4c55797112e4.png">
 
 _**This table gives me a lot of information (I can discard the first year (2014 because it recorded just 4 months):**_
-
-  a. First of all, the year which I listened the most hours was 2021, and the least was 2020;
-  b. Between 2017 and 2020 i reduced a lot my time listening to spotify;
-  c. In 2021 I increased to the most my listened hours, but then in 2022 I listened it to few hours.
++ First of all, the year which I listened the most hours was 2021, and the least was 2020;
++ Between 2017 and 2020 i reduced a lot my time listening to spotify;
++ In 2021 I increased to the most my listened hours, but then in 2022 I listened it to few hours.
   
 
