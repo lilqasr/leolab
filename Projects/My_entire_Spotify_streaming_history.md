@@ -192,7 +192,46 @@ FROM YEARS_PLAYED;
 
 _**This table gives me a lot of information (I can discard the first year (2014 because it recorded just 4 months):**_
 + First of all, the year which I listened the most hours was 2021, and the least was 2020;
-+ Between 2017 and 2020 i reduced a lot my time listening to spotify;
++ Between 2017 and 2020 i reduced a lot my time listening to spotify - around 147 hours less.
 + In 2021 I increased to the most my listened hours, but then in 2022 I listened it to few hours.
-  
+
+### 2. Which are my top 3 artist by time listened to and numbers of time played per year:
+
+Before proceeding with this, I created a new column for years:
+```sql
+ALTER TABLE spotihist
+ADD COLUMN year_played INT NOT NULL AFTER when_played;
+
+UPDATE spotihist
+SET year_played = EXTRACT(YEAR FROM when_played);
+```
+
+Then, the query using CTE:
+
+```sql
+-- Top 3 artist by time listened
+with ranking_artist as (
+select year_played, artist_name, count(artist_name),
+RANK() OVER (PARTITION BY year_played order by year_played DESC, count(artist_name) DESC) as rank_artist_played
+from spotihist group by year_played, artist_name)
+SELECT * FROM ranking_artist
+where rank_artist_played <=3;
+```
+
+<img width="675" alt="image" src="https://user-images.githubusercontent.com/112327873/220971021-c39933c8-a535-498d-958b-6464da2bc02e.png">
+
+
+```sql
+-- Top 3 artist by numbers of time played
+with most_listened_artist as (
+select year_played, artist_name, sum(ms_played/3600000),
+RANK() OVER (PARTITION BY year_played order by year_played DESC, sum(ms_played/3600000) DESC) as rank_artist_listened
+from spotihist group by year_played, artist_name)
+SELECT * FROM most_listened_artist
+where rank_artist_listened <=3;
+```
+
+<img width="692" alt="image" src="https://user-images.githubusercontent.com/112327873/220971156-301da21d-5116-438f-830f-63dfc6531d54.png">
+
+
 
