@@ -1,16 +1,16 @@
 <h1 align="center"> What My Entire Spotify Streaming History Says about me?</h1>
 
-In the [previous post](https://lilqasr.github.io/leolab/Projects/Analyzing_my_Spotify_historical_Data_part-1.html), 
-i show my spotify streaming data analysis for an entire year, but before finish it, i received the entire streaming history, which is SINCE THE FIRST TIME
-I PLAYED A SONG/TRACK ON SPOTIFY.
-
-I received a zip file with all the information containing four files: three json files, and one PDF, which contains the explanation of the data sent.
-The json files where all the data captured with the streaming information. 
-
 ### Table of contents:
 - [The preprocessing](#the-preprocessing)
 - [The General analysis](#i-the-general-analysis)
 - [A time series analysis](#ii-a-time-series-analysis)
+
+In my [previous post](https://lilqasr.github.io/leolab/Projects/Analyzing_my_Spotify_historical_Data_part-1.html), 
+i show my spotify streaming data analysis for an entire year, but before finish it, i received the entire streaming history, which is SINCE THE FIRST TIME
+I PLAYED A SONG/TRACK ON SPOTIFY.
+
+I received a zip file with all the information containing four files: three json files, and one PDF, which contains the explanation of the data sent.
+The json files where all the data captured with the streaming information. However, there is one important thing that this information sent by Spotify lacks: **THE GENRE CLASSIFICATION**. That is a nice information you want to know because is a thing they show you when they sent you the "Annual wrap information". But it's fine!!!
 
 ## The preprocessing
 
