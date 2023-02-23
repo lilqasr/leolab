@@ -132,3 +132,4 @@ As you could see, i used a CTE to create a new column in order to create another
 
 **So, when i was about to finish this analysis, i received a mail with my entire streaming history, and i decide to postpose a little this one, in order to make the "big one"... and [THIS IS THE RESULT](/Projects/My_entire_Spotify_streaming_history.md).**
 
+
