@@ -7,6 +7,11 @@ I PLAYED A SONG/TRACK ON SPOTIFY.
 I received a zip file with all the information containing four files: three json files, and one PDF, which contains the explanation of the data sent.
 The json files where all the data captured with the streaming information. 
 
+### Table of contents:
+- [The preprocessing](#the-preprocessing)
+- [The General analysis](i-the-general-analysis)
+- [A time series analysis](#ii-a-time-series-analysis)
+
 ## The preprocessing
 
 **The first thing was to import the json files and get it into individuals tables, and then make the union.**
@@ -171,7 +176,7 @@ GROUP BY episode_show_name ORDER BY 2 DESC LIMIT 10;
 ```
 <img width="450" alt="image" src="https://user-images.githubusercontent.com/112327873/220753748-691bc699-1c36-4e00-ade0-74d1aeaf55b2.png">
 
-## **II. A time series analysis**
+## II. A time series analysis
 
 As you can see at the beggining, this dataset is a collection of information from 2014 to beggining 2023. That means that i can do a time series analysis.
 
