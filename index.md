@@ -79,10 +79,11 @@ layout: default
 <h3><a style="font-weight:bold" href="Projects/Analyzing_my_Spotify_historical_Data_part-1.html">1. My Last Year Spotify streaming data</a><br></h3>
 
 <h3><a style="font-weight:bold" href="Projects/My_entire_Spotify_streaming_history.html">2. What My Entire Spotify Streaming History Says about me?</a><br></h3>
+<img src="images/musica1.png" width="410"/>
  
  <h3><a style="font-weight:bold" href="Projects/European_football_games.html">2. European Football Games</a><br></h3>
  
-<img src="images/musica1.png" width="410"/>
+
  
  </details>
 
