@@ -156,9 +156,68 @@ GROUP BY l.name ORDER BY 2 DESC
 As we can see, Spain, France and England has the same number of games, and Italy a few less... what surprised me because these 4 leages has the same number of teams every season. So, the next step, i will be checking out the Serie A data in the Match table.
 
 ### 3. How many Home and Away Goals?
-So, the Match table has also the score for every game. We are goin to see how many goals are score for the home and away teams in each league, and then by season but just for the 5 top leagues.
+So, the Match table has also the score for every game. We are going to see how totals and average goals scored for the home and away teams in each league, and then by season but just for the 5 top leagues.
 
+```sql
+-- Quantity of home and away goals BY league.
+SELECT l.name AS League_name, 
+SUM(m.home_team_goal) as Home_Goals,
+SUM(m.away_team_goal) as Away_Goals,
+SUM(m.home_team_goal) + SUM(m.away_team_goal) AS TOTAL_GOALS
+FROM Match m
+INNER JOIN League l on m.league_id = l.id
+GROUP BY 1 ORDER BY 4 DESC
 
+-- AVERAGE GOALS BY LEAGUE
+SELECT l.name AS League_name, 
+ROUND(AVG(m.home_team_goal),2) as AVG_Home_Goals,
+ROUND(AVG(m.away_team_goal),2) as AVG_Away_Goals,
+ROUND(AVG(m.home_team_goal) + AVG(m.away_team_goal),2) AS AVG_TOTAL_GOALS
+FROM Match m
+INNER JOIN League l on m.league_id = l.id
+GROUP BY 1 ORDER BY 4 DESC
+```
 
+<div id="pictures">
+<img width="398" alt="image" src="https://user-images.githubusercontent.com/112327873/225414176-591ca0b1-fb41-4142-8034-c16f7e8d6ed3.png">
+<img width="476" alt="image" src="https://user-images.githubusercontent.com/112327873/225414650-25379c74-dd8f-4b25-953e-0031d14fbf38.png">
+</div>
 
+As we can see in all of these seasons, the league with more goals was Spain, follow by England and Italy Serie A; in all of them home teams score more goals than away teams... it is kind of the logic. But then, when we look at the average goals, we find that the Netherlands Eredivisie has the highes average of scored goals per game, followed by Switzerland Super League, and Germany 1. Bundesliga. But to check how well distributed is this data we should look at some graphs that we are not going to do in this post.
 
+#### 3.1 Goals by season and league
+
+```sql
+-- Quantity of home and away goals BY league and season
+SELECT l.name AS League_name, m.season,
+SUM(m.home_team_goal) as Home_Goals,
+SUM(m.away_team_goal) as Away_Goals,
+SUM(m.home_team_goal) + SUM(m.away_team_goal) AS TOTAL_GOALS,
+RANK() OVER (PARTITION BY m.season order by SUM(m.home_team_goal) + SUM(m.away_team_goal)  DESC) as Rank_League_Season
+FROM Match m
+INNER JOIN League l on m.league_id = l.id
+WHERE l.name in ('Spain LIGA BBVA','Italy Serie A', 'England Premier League','Germany 1. Bundesliga','France Ligue 1')
+GROUP BY 1,2 ORDER BY 2 ASC,  5 DESC
+```
+<div id="pictures">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/112327873/225446764-96ce9ad4-386d-4c75-a63a-b02a531268e9.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/112327873/225446804-1d25f11d-65b3-4f3c-9ee4-bd33718357dc.png">
+</div>
+
+```sql
+-- AVERAGE GOALS BY LEAGUE AND SEASON
+SELECT l.name AS League_name, m.season,
+ROUND(AVG(m.home_team_goal),2) as AVG_Home_Goals,
+ROUND(AVG(m.away_team_goal),2) as AVG_Away_Goals,
+ROUND(AVG(m.home_team_goal) + AVG(m.away_team_goal),2) AS AVG_TOTAL_GOALS,
+RANK() OVER (PARTITION BY m.season order by AVG(m.home_team_goal) + AVG(m.away_team_goal) DESC) as Rank_League_Season
+FROM Match m
+INNER JOIN League l on m.league_id = l.id
+WHERE l.name in ('Spain LIGA BBVA','Italy Serie A', 'England Premier League','Germany 1. Bundesliga','France Ligue 1')
+GROUP BY 1,2 
+```
+
+<div id="pictures">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/112327873/225447138-79943f78-6494-446c-8b04-9ddfb90915ba.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/112327873/225447172-473c1fe2-421b-4660-96f7-28c161162393.png">
+</div>
