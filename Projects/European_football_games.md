@@ -88,8 +88,75 @@ GROUP BY 1,2,3
 <img src="https://user-images.githubusercontent.com/112327873/225149901-83b6d240-9118-48fe-849d-ff5aba362487.png">
 </div>
 
+## II. Exploration part 2
+
+After the exploration of the tables, i realized that the important one was the "Match" table and i had to make some joins with the others tables as you just saw. 
+
+### 1. How many teams are recorded by country and league in the match table?
+
+```sql
+--How many teams per country and league:
+SELECT c.name Country_name, l.name League_name,
+COUNT(DISTINCT(m.home_team_api_id)) NUMBER_OF_TEAMS FROM Match m
+INNER JOIN Country c ON m.country_id = c.id
+INNER JOIN League l on m.league_id = l.id
+GROUP BY 1,2
+```
+
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/112327873/225371466-6b30a384-fba6-4d51-82a5-b3d1fc0f00d6.png">
+
+If i want to agreggate percentage of total, i have to use CTE, as this:
+```sql
+WITH TOTAL_TEAMS AS (
+SELECT c.name Country_name, l.name League_name,
+COUNT(DISTINCT(m.home_team_api_id)) NUMBER_OF_TEAMS FROM Match m
+INNER JOIN Country c ON m.country_id = c.id
+INNER JOIN League l on m.league_id = l.id
+GROUP BY 1,2 ORDER BY 3  DESC)
+SELECT *, 
+ROUND(NUMBER_OF_TEAMS*100.00/(SELECT sum(NUMBER_OF_TEAMS) FROM TOTAL_TEAMS),2) as 'PERCENTAGE OF TOTAL'
+FROM TOTAL_TEAMS
+GROUP BY Country_name, League_name
+ORDER BY 4 DESC
+```
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/112327873/225398494-86864bb9-c1e4-48cb-941e-033f89360576.png">
+
+England, Spain, Italy, Germany and France have the Top 5 leagues in Europe. All of them, with the exception of "Germany  1. Bundesliga" have 20 teams every season; but the table match registered 35 teams in France, 34 in England, 33 in Spain, 32 in Italy and 30 in Germany. This is because the worst 3 teams (that get least points in a sesons) are relegated to second division.
 
 
+### 2. How many games were recorded by country and league in the match table?
+We could see that the Match table has 25,979 games, but i wanted to know how many games were registered by league.
+
+```sql
+-- TOTAL MATCHES BY COUNTRY AND LEAGUE
+SELECT c.name Country_name, l.name League_name, COUNT(*) Q_GAMES FROM Match m
+INNER JOIN Country c ON m.country_id = c.id
+INNER JOIN League l on m.league_id = l.id
+GROUP BY c.name, l.name ORDER BY 3 DESC
+
+-- TOTAL MATCHES AND PERCENTAGE BY LEAGUE
+WITH GEN_GAMES AS (
+SELECT c.name Country_name, l.name League_name, COUNT(*) Q_GAMES FROM Match m
+INNER JOIN Country c ON m.country_id = c.id
+INNER JOIN League l on m.league_id = l.id
+GROUP BY c.name, l.name ORDER BY 3 DESC)
+SELECT *, ROUND(Q_GAMES*100.00/(SELECT SUM(Q_GAMES) FROM GEN_GAMES),2) AS 'PERCENTAGE OF TOTAL'
+FROM GEN_GAMES
+GROUP BY Country_name, League_name
+ORDER BY 4 DESC       
+
+-- Another way for percentage
+SELECT  l.name League_name, COUNT(*) Q_GAMES, ROUND(COUNT(*)*100.00/(SELECT COUNT(*) FROM Match),2) as 'PERCENTAGE OF TOTAL'
+ FROM Match m
+INNER JOIN League l on m.league_id = l.id
+GROUP BY l.name ORDER BY 2 DESC
+```
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/112327873/225405570-2364bd14-6b6d-4c64-845e-24d8e430b0b4.png">
+
+As we can see, Spain, France and England has the same number of games, and Italy a few less... what surprised me because these 4 leages has the same number of teams every season. So, the next step, i will be checking out the Serie A data in the Match table.
+
+### 3. How many Home and Away Goals?
+So, the Match table has also the score for every game. We are goin to see how many goals are score for the home and away teams in each league, and then by season but just for the 5 top leagues.
 
 
 
