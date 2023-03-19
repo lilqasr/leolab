@@ -209,7 +209,7 @@ GROUP BY 1,2 ORDER BY 2 ASC,  5 DESC
 SELECT l.name AS League_name, m.season,
 ROUND(AVG(m.home_team_goal),2) as AVG_Home_Goals,
 ROUND(AVG(m.away_team_goal),2) as AVG_Away_Goals,
-ROUND(AVG(m.home_team_goal) + AVG(m.away_team_goal),2) AS AVG_TOTAL_GOALS,
+ROUND(AVG(m.home_team_goal) + AVG(m.away_team_goal),2) AS AVG_TOTAL_GOALS_x_Game,
 RANK() OVER (PARTITION BY m.season order by AVG(m.home_team_goal) + AVG(m.away_team_goal) DESC) as Rank_League_Season
 FROM Match m
 INNER JOIN League l on m.league_id = l.id
@@ -221,3 +221,101 @@ GROUP BY 1,2
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/112327873/225447138-79943f78-6494-446c-8b04-9ddfb90915ba.png">
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/112327873/225447172-473c1fe2-421b-4660-96f7-28c161162393.png">
 </div>
+
+As we could see, I could get the Total and average Goals by the Top 5 european leagues. Additionally I get the ranking of these leagues considering total and average goals per game. As we can see, in total goals we can see that the top are Premier League and Spain Liga. In average goal per game the league has more goals typically is German Bundesliga.
+
+## III. Italian and AS ROMA EDA
+
+Before, [at the beginning](#2-how-many-games-were-recorded-by-country-and-league-in-the-match-table), I realized there were less games in the Match table for the Serie A than the other 3 top european leagues (Spain, France and England), so i want to find out which season are the games not registered. Remember these four leagues have the same number of team each season (20)
+
+```sql
+-- How many games in Serie A:
+SELECT l.name League_name, m.season, COUNT(match_api_id) Quantity_GAMES FROM Match m
+INNER JOIN League l on m.league_id = l.id
+WHERE l.name = 'Italy Serie A'
+GROUP BY l.name, m.season ORDER BY 2 
+```
+<img width='300' src='https://user-images.githubusercontent.com/112327873/225984913-e2997e69-ddbb-42f2-9340-d0ab8390d382.png'>
+
+So, we can see that there are 22 games less in season 2011/2012 and 1 less in 2014/2015.
+
+### 2. AS ROMA EDA
+### 2.1 How many games were registered for AS ROMA?
+
+```sql
+-- TOTAL AS ROMA GAMES 
+SELECT COUNT(*)
+FROM Match m
+INNER JOIN Team t on m.home_team_api_id = t.team_api_id
+INNER JOIN Team t2 on m.away_team_api_id = t2.team_api_id
+WHERE t.team_short_name = 'ROM' OR t2.team_short_name = 'ROM'
+
+-- AS ROMA GAMES BY SEASON
+SELECT m.season, COUNT(*)
+FROM Match m
+INNER JOIN Team t on m.home_team_api_id = t.team_api_id
+INNER JOIN Team t2 on m.away_team_api_id = t2.team_api_id
+WHERE t.team_short_name = 'ROM' OR t2.team_short_name = 'ROM'
+GROUP BY 1
+```
+
+<img width='300' src='https://user-images.githubusercontent.com/112327873/226181080-842f8bad-ba92-4e08-a2bf-e5813fa7ae79.png'>
+<img width='300' src='https://user-images.githubusercontent.com/112327873/226181100-86ac50c4-092e-43b8-a0cb-fb07c437919c.png'>
+
+As can be shown, there are 303 games recorded in the Match table for ASROMA, and according with the number of games per season, is missing one game in 2011/2012 season, because it only counts 37 matches.
+
+### 2.2 Total AS ROMA goals for all seasons and on each one?
+
+```sql
+-- ASROMA GOALS SCORED AND ALLOWED 
+SELECT 
+SUM(CASE WHEN t.team_short_name = 'ROM' THEN m.home_team_goal ELSE 0 END)  + SUM(CASE WHEN t2.team_short_name= 'ROM' THEN m.away_team_goal  ELSE 0 END) TOTAL_SCORED_GOALS,
+SUM(CASE WHEN t.team_short_name <> 'ROM' THEN m.home_team_goal ELSE 0 END)  + SUM(CASE WHEN t2.team_short_name<> 'ROM' THEN m.away_team_goal  ELSE 0 END) TOTAL_ALLOWED_GOALS
+FROM Match m
+INNER JOIN Team t on m.home_team_api_id = t.team_api_id
+INNER JOIN Team t2 on m.away_team_api_id = t2.team_api_id
+WHERE t.team_short_name = 'ROM' OR t2.team_short_name = 'ROM'
+
+-- ASROMA GOALS BY SEASON 
+SELECT m.season, 
+SUM(CASE WHEN t.team_short_name = 'ROM' THEN m.home_team_goal ELSE 0 END)  + SUM(CASE WHEN t2.team_short_name= 'ROM' THEN m.away_team_goal  ELSE 0 END) TOTAL_SCORED_GOALS,
+SUM(CASE WHEN t.team_short_name <> 'ROM' THEN m.home_team_goal ELSE 0 END)  + SUM(CASE WHEN t2.team_short_name<> 'ROM' THEN m.away_team_goal  ELSE 0 END) TOTAL_ALLOWED_GOALS
+FROM Match m
+INNER JOIN Team t on m.home_team_api_id = t.team_api_id
+INNER JOIN Team t2 on m.away_team_api_id = t2.team_api_id
+WHERE t.team_short_name = 'ROM' OR t2.team_short_name = 'ROM'
+GROUP BY 1
+```
+<img width='350' src='https://user-images.githubusercontent.com/112327873/226188036-dd3d00fc-7177-4a75-a589-7d76efc9b784.png'>
+
+
+<img width='350' src='https://user-images.githubusercontent.com/112327873/226187743-05e31506-4b56-4ec9-99a3-f164eddc575f.png'>
+
+
+As shown above, I could get the Total goals Scored and Allowed by season. I double checked this data with the [Serie A official website](https://www.legaseriea.it/it/serie-a/classifica) and could confirmed this info (only season 2011/2012 is missing a few goals)
+
+### 2.3 AS ROMA points each season?
+
+```sql
+WITH ROMASEASON AS (
+SELECT m.season, t.team_short_name AS HOME_TEAM,
+t2.team_short_name AS AWAY_TEAM,
+m.home_team_goal as Home_Goals,
+m.away_team_goal as Away_Goals,
+CASE 
+WHEN t.team_short_name = 'ROM' AND m.home_team_goal = m.away_team_goal THEN 1
+WHEN t2.team_short_name = 'ROM' AND m.home_team_goal = m.away_team_goal THEN 1
+WHEN t.team_short_name = 'ROM' AND m.home_team_goal > m.away_team_goal THEN 3
+WHEN t2.team_short_name = 'ROM' AND m.home_team_goal < m.away_team_goal THEN 3
+ELSE 0 END AS POINTS
+FROM Match m
+INNER JOIN Team t on m.home_team_api_id = t.team_api_id
+INNER JOIN Team t2 on m.away_team_api_id = t2.team_api_id
+WHERE t.team_short_name = 'ROM' OR t2.team_short_name = 'ROM')
+SELECT season, SUM(POINTS) AS TOTAL_POINTS
+FROM ROMASEASON
+GROUP BY season
+```
+<img width='350' src='https://user-images.githubusercontent.com/112327873/226188389-334b88e9-0a48-490d-9223-136d5c95effb.png'>
+
+As displayed above, this is the historic points for AS ROMA since 2008/2009 SEASON.
