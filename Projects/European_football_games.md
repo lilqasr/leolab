@@ -6,12 +6,17 @@ The information shown in the database is a little confused because does not desc
 selecting some fields i understood. The interesting about the database was that i was able to make some queries with joins, Common Tables Expressions (CTE)
 and subqueries.
 
+## The content:
+- [I. The data exploration](#i-the-data-exploration)
+- [II. Exploration part 2](#ii-exploration-part-2)
+- [III. Italian and AS ROMA EDA](#iii-italian-and-as-roma-eda)
+
 ## I. The data exploration
 Before starting, i had to make a little research on how to processing the data because i wasn't able to open the database in mysql. So i realise it could 
 be done on Python, but it was going to take me more than time that i thought. Then i figured it out that it was this RDBM for SQLite called DB BROWSER FOR
 SQLITE, so i did it on this. Also this program, allows to convert the sqlite database into a normal sql database.
 
-### 1 How many tables do i have in this database?
+### 1. How many tables do i have in this database?
 
 ```sql
 SELECT 
