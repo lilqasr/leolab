@@ -3,8 +3,9 @@ Since i'm a football lover, I [found this dataset](https://www.kaggle.com/datase
 for the top european leagues. It collects data from Teams, Players, and Matches. The database was in sqlite, so i worked the analysis on DB Browser for SQLite.
 
 The information shown in the database is a little confused because does not describe what's talk about, so i try to make a small analysis 
-selecting some fields i understood. The interesting about the database was that i was able to make some queries with joins, Common Tables Expressions (CTE)
-and subqueries.
+selecting some fields i understood. The interesting about the database was that i was able to make some queries with joins, Common Tables Expressions (CTE)and subqueries.
+
+[This is the complete sql file with the queries](https://github.com/lilqasr/Projects/blob/main/Projects_list/SQL/Football_analysis/matches08-16.sql)
 
 ## The content:
 - [I. The data exploration](#i-the-data-exploration)
