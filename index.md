@@ -16,7 +16,7 @@ layout: default
  
 <p>
 
-<h3><a style="font-weight:bold" href="Projects/Nicaragua's-Municipality-Elections-Results.html">4. Nicaragua's Municipality Elections Result</a></h3>
+<h3><a style="font-weight:bold" href="Projects/Nicaragua's-Municipality-Elections-Resultsm.html">4. Nicaragua's Municipality Elections Result</a></h3>
 
 <img src="images/MunicipalitiesElections2022.png" width="400"/>
  
