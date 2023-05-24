@@ -160,6 +160,21 @@ Mean Absolute Percentage Error for MODEL 2 is 0.0105 == means that the model is 
 
 The difference is a little. Now, we are going to check if the values for the first three months of 2023 are correct, according with the official data. 
 
+| Date    | Mod2            | Mod1            | Actual values     | Diff with MOD2          | Diff with MOD1          |
+|---------|-----------------|-----------------|-------------------|-------------------------|-------------------------|
+| 31/1/23 |      10,354.74  |      10,697.58  |         10,045.5  |                (309.24) |                (652.08) |
+| 28/2/23 |      13,269.57  |      14,135.62  |         13,406.6  |                 137.03  |                (729.02) |
+| 31/3/23 |      10,169.80  |      10,761.77  |       10,053.89   |                (115.92) |                (707.89) |
+
+So, looking at the predictions and the actual values, we can see that Model 2 is the best predicting the taxes income in Nicaragua. As I mentioned at the beginning, the models were built with the values from January 2016 to December 2022. So far, Nicaragua's government has released the taxes data until February 2023, ( See: [Ministerio de Hacienda y Credito Publico](https://view.officeapps.live.com/op/view.aspx?src=http%3A%2F%2Fwww.hacienda.gob.ni%2Fhacienda%2Ffinanzaspublicas%2Fefp%2F1-7.xlsx&wdOrigin=BROWSELINK)), but a the beginning of May, they publish a Report with the total Government Incomes up to March 2023; that how I got the taxes values for that Month.
+
+The source code can be found on my [Github repository](https://github.com/lilqasr/Projects/blob/main/Projects_list/Python/Time_Series_Forecast_Taxes_Income_Nicaragua/ingresos_tribut_cleaned.ipynb)
+
+
+
+
+
+
 
 
 
