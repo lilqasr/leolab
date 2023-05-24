@@ -39,9 +39,11 @@ As we can see, when we apply just the first difference to our logTS, the values 
 <img width="445" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/46db6662-bfa5-4b14-a9cf-b837583b8f28">
 
 If we apply a seasonal difference (12 months) to the logTS, apparently is not enough to have a Stationary Series.
+
 <img width="463" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/9acccf0f-d7f2-48d5-b507-fd8f5cc292a0">
 
 I would need to apply a first difference to the seasonal difference in order to make stationary the Series, just like this:
+
 <img width="516" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/32c73495-045e-4095-8147-9dc342726e5b">
 
 ## II. Build the model
