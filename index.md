@@ -6,6 +6,14 @@ layout: default
 
 <details><summary><img height="32" width="32" src="https://cdn.simpleicons.org/python/blue" /><h2 style="color: blue"> PYTHON</h2></summary>
 
+ <p>
+ 
+<h3><a style="font-weight:bold" href="Projects/Forecasting_Taxes_Nicaragua.html">6. Time Series Forecast - Nicaragua's Government Taxes Revenues.</a></h3>
+
+<img width="400" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/a98febe7-378a-4fc3-ac49-e2be8602e975">
+
+ </p>
+ 
 <p>
  
 <h3><a style="font-weight:bold" href="Projects/Apartments_for_Rent.html">5. Apartments for rent in Rome</a></h3>
