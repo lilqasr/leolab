@@ -98,17 +98,21 @@ So, we are going to work with this two models, and see which one is better to pr
 First of all, Both of the models looks like all the p-values of the coefficients are significants.
 
 Model 1
+
 <img width="500" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/e0c94d26-c0b2-4e18-8a1b-9f78bd474589">
 
 Model 2
+
 <img width="500" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/21e63fc0-500b-48ff-abc7-96934bd61626">
 
 Second part, is to evaluate the residuals. We see optimals behaviors, but is necessary to run some test.
 
 Model 1
+
 <img width="870" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/fbe4b863-5eef-46b9-ad7f-cc49d3d24fda">
 
 Model 2
+
 <img width="870" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/8c4c5bb4-6bf5-4c75-aabe-c2ae569795a8">
 
 
@@ -120,9 +124,11 @@ Tests:
 - Durbin Watson
 
 Model 1
+
 <img width="400" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/bb8c738a-9c79-4cd5-bb4a-1158c416eede">
 
 Model 2
+
 <img width="400" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/7cb7c332-dda0-4b77-be21-31fc4b79a22e">
 
 All results, except for Normality test, says that the residuals are good: no serial correlations, and no heterokedasticity. The normal distribution could be because of some extreme (outliers) values because of the crisis in Nicaragua (political crisis and COVID-19 what produced a economic crisis).
@@ -143,14 +149,17 @@ The chart below shows the observed values vs the predictions (for the last 2 yea
 <img width="800" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/792a2448-1c5c-4d91-8d33-9eec1a2ece45">
 
 The chart below shows the forecast for the next 24 months. It also seems that captured the seasonality showed in the past values.
+
 <img width="800" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/20783130-41b2-4ac0-9895-2c432c3dfd5a">
 
 ### MODEL 2
 
 According to this chart, looks like did not capture very well the seasonality behaviour, but it fitted pretty well the rest of the actual values.
+
 <img width="800" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/dabc284b-dd44-4c38-803d-7122d1a74ce1">
 
 The forecasting seems pretty well because captured the seasonality behaviour for the future values.
+
 <img width="800" alt="image" src="https://github.com/lilqasr/leolab/assets/112327873/7497a18b-e68e-4d13-9e84-86b0354b4c4a">
 
 ## V. Last evaluations
