@@ -159,6 +159,7 @@ Once the cleaning is made, you can save the file in any data format. But then,  
 The deep analysis of this data was made in a report that has not yet been published, but you can find a general analysis here:
 
 **[PIP_2017-2022_ANALYSIS](https://nbviewer.org/github/lilqasr/Projects/blob/main/Projects_list/Multi/Public%20Investment%20Program%20Nicaragua/Public_Investment_Program%202017-2022%20Analysis.ipynb)**
+**[Tableau Dashboard](https://public.tableau.com/app/profile/lilqasr88/viz/PIPNIC2017-2022/Story1)**
 
 [back](./)
 
